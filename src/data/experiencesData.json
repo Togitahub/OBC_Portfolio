@@ -1,0 +1,44 @@
+[
+	{
+		"id": 1,
+		"company": "WyseGuysLab",
+		"role": "Full Stack Developer",
+		"startDate": "01/2025",
+		"endDate": "10/2025",
+		"tasks": [
+			{
+				"id": 1,
+				"description": "Developed new features for web applications, using technologies like JavaScript, MongoDB, Express.js, React, Node.js, GraphQL, etc. While working in a team to implement efficient solutions."
+			},
+			{
+				"id": 2,
+				"description": "Contributed to the optimization and maintenance of existing code, fixing bugs and improving application performance for a better user experience."
+			},
+			{
+				"id": 3,
+				"description": "Worked in an agile development environment, collaborating with designers and other developers, and participating in daily stand-ups and code reviews to ensure product quality."
+			}
+		]
+	},
+	{
+		"id": 2,
+		"company": "DDS Lab",
+		"role": "CAM Team Leader",
+		"startDate": "03/2024",
+		"endDate": "01/2025",
+		"tasks": [
+			{
+				"id": 1,
+				"description": "Coordinated the operations of the CAM team, ensuring the quality of dental parts through constant inspections and technical protocols."
+			},
+			{
+				"id": 2,
+				"description": "Performed preventive and corrective maintenance on industrial machinery and computer systems, resolving technical failures in record time and ensuring good operational availability."
+			},
+			{
+				"id": 3,
+				"description": "Train new employees using the best possible practices, guiding them every step of the way and striving to make their learning experience as positive as possible."
+			}
+		]
+	}
+]

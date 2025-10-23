@@ -1,0 +1,178 @@
+@import "tailwindcss";
+
+.dark-theme {
+	--color-main: #000000;
+	--color-first: #0aecec;
+	--color-second: #00bfa5;
+	--color-third: #f0eeee;
+	--color-fourth: #a0a0a0;
+}
+
+.light-theme {
+	--color-main: #f5fbfb;
+	--color-first: #00bcd4;
+	--color-second: #009688;
+	--color-third: #0d1b1e;
+	--color-fourth: #476c72;
+}
+
+.neutro-theme {
+	--color-main: #000000;
+	--color-first: #ffffff;
+	--color-second: #a5a5a5;
+	--color-third: #818181;
+	--color-fourth: #000000;
+}
+
+.colorful-theme {
+	--color-main: #022891;
+	--color-first: #fff12c;
+	--color-second: #66f506;
+	--color-third: #f5f7fa;
+	--color-fourth: #a8b2c8;
+}
+
+.neon-font {
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: var(--color-third);
+}
+
+@theme {
+	--color-main: var(--color-main);
+	--color-first: var(--color-first);
+	--color-second: var(--color-second);
+	--color-third: var(--color-third);
+	--color-fourth: var(--color-fourth);
+
+	--font-bradley: bradley hand, cursive;
+}
+
+::selection {
+	color: var(--color-first);
+}
+
+::-webkit-scrollbar {
+	width: 13px;
+}
+
+::-webkit-scrollbar-track {
+	background: var(--color-main);
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	border: 3px solid var(--color-first);
+}
+
+.animate-move {
+	animation: move 2s linear normal infinite;
+}
+
+@keyframes move {
+	0% {
+		left: -100px;
+	}
+	100% {
+		left: 100vw;
+	}
+}
+
+.animate-border-pulse {
+	animation: border-pulse 2.5s ease-out infinite;
+}
+
+@keyframes border-pulse {
+	0% {
+		transform: scale(1);
+		opacity: 0.25;
+	}
+	50% {
+		transform: scale(1.05);
+		opacity: 0.5;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 0.25;
+	}
+}
+
+.animate-text-shadow-pulse {
+	animation: text-shadow-pulse 1s ease-out alternate infinite;
+}
+
+@keyframes text-shadow-pulse {
+	0% {
+		text-shadow: var(--color-first) 0px 0px 0px;
+	}
+	100% {
+		text-shadow: var(--color-first) 10px 5px 15px;
+	}
+}
+
+.animate-floating {
+	animation: floating 1s ease-out alternate infinite;
+}
+
+@keyframes floating {
+	0% {
+		transform: translateY(0px);
+	}
+	100% {
+		transform: translateY(-20px);
+	}
+}
+
+.animate-floating-reverse {
+	animation: floating-reverse 1s ease-out alternate infinite;
+}
+
+@keyframes floating-reverse {
+	0% {
+		transform: translateY(0px);
+	}
+	100% {
+		transform: translateY(20px);
+	}
+}
+
+.animate-box-shadow-pulse {
+	animation: box-shadow-pulse 1s ease-out alternate infinite;
+}
+
+@keyframes box-shadow-pulse {
+	0% {
+		box-shadow: var(--color-third) 0px 0px 0px;
+	}
+	100% {
+		box-shadow: var(--color-third) 0px 0px 15px;
+	}
+}
+
+.animate-width-expand-collapse {
+	animation: width-expand-collapse 2s ease-out alternate infinite;
+}
+
+@keyframes width-expand-collapse {
+	0% {
+		width: 5rem;
+	}
+	100% {
+		width: 50rem;
+	}
+}
+
+.animate-slideUp {
+	animation: slideUp 1s ease-out forwards;
+}
+
+@keyframes slideUp {
+	from {
+		opacity: 0;
+		transform: translateY(100%);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
