@@ -3,6 +3,7 @@
 	"skills": "MY MAIN SKILLS",
 	"ws_message": "Hi, I would like to hire you",
 	"about_description": "I am 23 years old and I am from Costa Rica. I love God, soccer, technology, and programming. I am a bilingual junior full stack developer with an unusual perspective: before writing code, I managed teams, solved real-world technical failures, and optimized complex processes in industrial environments. Today, I apply that same logic, focus, and commitment to the world of software, creating clear, functional, and durable solutions. Not only do I learn quickly, but I also think differently and adapt to any situation. I am always learning new things and improving my skills as a developer so that I can bring a better version of myself to my future job every day.",
+	"technologies": "Technologies",
 	"nav": {
 		"home": "Home",
 		"about": "About",
@@ -12,6 +13,7 @@
 	"buttons": {
 		"check_projects": "CHECK MY PROJECTS",
 		"hire": "HIRE ME",
-		"details": "DETAILS"
+		"details": "DETAILS",
+		"project_site": "PROJECT SITE"
 	}
 }
