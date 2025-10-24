@@ -1,25 +1,28 @@
+import { changeLanguage } from "i18next";
 import { useTranslation } from "react-i18next";
 
 function LanguageSwitcher() {
 	const { i18n } = useTranslation();
+	const currentLang = i18n.language;
 
-	const languages = {
-		en: "EN",
-		es: "ES",
-	};
+	const containerClass =
+		"flex justify-center items-center text-first font-bold border-2 px-2 rounded cursor-pointer transition-colors duration-300 hover:bg-first hover:text-main";
 
 	return (
-		<select
-            className="rounded bg-main border-2 border-first text-first"
-			value={i18n.language}
-			onChange={(e) => i18n.changeLanguage(e.target.value)}
-		>
-			{Object.entries(languages).map(([code, name]) => (
-				<option key={code} value={code}>
-					{name}
-				</option>
-			))}
-		</select>
+		<div className="flex">
+			{currentLang === "es-419" ? (
+				<div onClick={() => changeLanguage("en")} className={containerClass}>
+					ES
+				</div>
+			) : (
+				<div
+					onClick={() => changeLanguage("es-419")}
+					className={containerClass}
+				>
+					EN
+				</div>
+			)}
+		</div>
 	);
 }
 
