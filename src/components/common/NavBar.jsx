@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import Button from "./Button";
 import LanguageSwitcher from "./LanguageSwitcher";
 import LogoSvg from "./LogoSvg";
@@ -8,16 +9,17 @@ import { BiMenu, BiX } from "react-icons/bi";
 import { IoLogoWhatsapp } from "react-icons/io";
 
 const NavBar = () => {
+	const { t } = useTranslation();
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 	const navItems = [
-		{ id: 1, text: "Home", link: "/" },
-		{ id: 2, text: "About", link: "/about" },
-		{ id: 3, text: "Projects", link: "/projects" },
-		{ id: 4, text: "Experience", link: "/experience" },
+		{ id: 1, text: t("nav.home"), link: "/" },
+		{ id: 2, text: t("nav.about"), link: "/about" },
+		{ id: 3, text: t("nav.projects"), link: "/projects" },
+		{ id: 4, text: t("nav.experience"), link: "/experience" },
 	];
 
-	const wsLink = "https://wa.me/50670216172?text=Hola me interesa contratarte";
+	const wsLink = `https://wa.me/50670216172?text=${t("ws_message")}`;
 
 	const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 

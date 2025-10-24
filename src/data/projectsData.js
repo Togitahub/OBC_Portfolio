@@ -1,4 +1,8 @@
-import catalog_cover from "/assets/images/catalog/catalog_cover.png";
+import hero_catalog from "/assets/images/catalog/hero.png";
+import admin_catalog from "/assets/images/catalog/admin.png";
+import hero_library from "/assets/images/library/hero_library.png";
+import hero_catalog_white from "/assets/images/catalog/hero_white.png";
+import admin_catalog_white from "/assets/images/catalog/admin_white.png";
 
 import { IoCarSportSharp, IoBook } from "react-icons/io5";
 import {
@@ -33,9 +37,12 @@ export const projectsData = [
 			},
 		},
 		link: "https://importacionesmbv.com/",
-		images: {
-			cover: catalog_cover,
-		},
+		images: [
+			hero_catalog,
+			admin_catalog,
+			hero_catalog_white,
+			admin_catalog_white,
+		],
 		icon: IoCarSportSharp,
 		techs: [
 			SiJavascript,
@@ -62,6 +69,8 @@ export const projectsData = [
 					"Aplicación full-stack desarrollada con Python (Django) y JavaScript (React) para crear una plataforma para gestionar y visualizar recursos educativos digitales. Permite a los usuarios organizar, buscar y acceder a una colección virtual de libros y documentos de forma intuitiva y eficiente. Este sistema robusto mejora la experiencia de aprendizaje en línea y la gestión de contenidos bibliográficos.",
 			},
 		},
+		link: "https://github.com/Togitahub/Biblioteca-Virtual",
+		images: [hero_library],
 		icon: IoBook,
 		techs: [
 			SiJavascript,

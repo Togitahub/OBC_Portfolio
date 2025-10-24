@@ -47,6 +47,30 @@
 	--font-bradley: bradley hand, cursive;
 }
 
+.slick-next {
+	right: 25px;
+}
+
+.slick-prev {
+	left: 20px;
+	z-index: 1;
+}
+
+.slick-next:before,
+.slick-prev:before {
+	color: var(--color-first);
+	font-size: 27px;
+}
+
+.slick-dots li button:before {
+	color: var(--color-third);
+	opacity: 1;
+}
+
+.slick-dots li.slick-active button:before {
+	color: var(--color-first);
+}
+
 ::selection {
 	color: var(--color-first);
 }
