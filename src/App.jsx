@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 
 import HomeView from "./views/HomeView";
@@ -11,19 +12,21 @@ import ExperiencesView from "./views/ExperienceView";
 
 function App() {
 	return (
-		<div className="bg-main">
-			<NavBar />
-			<Routes>
-				<Route path="/" element={<HomeView />} />
-				<Route path="/about" element={<AboutView />} />
-				<Route path="/projects" element={<ProjectsView />} />
-				<Route path="/projects/:id" element={<ProjectView />} />
-				<Route path="/experience" element={<ExperiencesView />} />
+		<Suspense fallback={"loading"}>
+			<div className="bg-main">
+				<NavBar />
+				<Routes>
+					<Route path="/" element={<HomeView />} />
+					<Route path="/about" element={<AboutView />} />
+					<Route path="/projects" element={<ProjectsView />} />
+					<Route path="/projects/:id" element={<ProjectView />} />
+					<Route path="/experience" element={<ExperiencesView />} />
 
-				<Route path="*" element={<NotFoundView />} />
-			</Routes>
-			<Particle />
-		</div>
+					<Route path="*" element={<NotFoundView />} />
+				</Routes>
+				<Particle />
+			</div>
+		</Suspense>
 	);
 }
 

@@ -11,8 +11,11 @@ import {
 	SiAdobeillustrator,
 } from "react-icons/si";
 import Button from "../components/common/Button";
+import { useTranslation } from "react-i18next";
 
 const HomeView = () => {
+	const { t } = useTranslation();
+
 	const iconClasses =
 		"size-10 text-first transition-all duration-200 hover:scale-80 hover:text-third";
 
@@ -45,11 +48,11 @@ const HomeView = () => {
 		<div className="overflow-hidden flex flex-col gap-2 absolute top-0 z-10 h-screen w-full items-center justify-center">
 			<div className="text-center px-4">
 				<h1 className="text-transparent neon-font text-4xl md:text-5xl font-bold animate__animated animate__backInLeft">
-					HI, I'M OSCAR BOLAÑOS CHACON
+					{t("greeting")}
 				</h1>
 				<div className="animate__animated animate__backInRight">
 					<h2 className="py-2 my-4 rounded-2xl text-third text-2xl md:text-3xl font-semibold animate-box-shadow-pulse">
-						MY MAIN SKILLS
+						{t("skills")}
 					</h2>
 				</div>
 			</div>
@@ -61,7 +64,7 @@ const HomeView = () => {
 				<Button
 					variation={"link"}
 					link={"/projects"}
-					text={"CHECK MY PROYECTS"}
+					text={t("buttons.check_projects")}
 					isRoundedFull={true}
 				/>
 			</div>

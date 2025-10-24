@@ -1,4 +1,5 @@
 import Button from "./Button";
+import LanguageSwitcher from "./LanguageSwitcher";
 import LogoSvg from "./LogoSvg";
 import ThemeChanger from "./ThemeChanger";
 
@@ -55,6 +56,8 @@ const NavBar = () => {
 								<ThemeChanger />
 							</div>
 							<div className="w-0.5 bg-first"></div>
+							<LanguageSwitcher />
+							<div className="w-0.5 bg-first"></div>
 							<div>
 								<Button
 									variation={"anchor"}
@@ -95,6 +98,7 @@ const NavBar = () => {
 					}`}
 				>
 					<div className="flex flex-col items-center justify-center h-full gap-6">
+						<LanguageSwitcher />
 						<div className="flex flex-col gap-3">
 							{navItems.map((item) => (
 								<Button

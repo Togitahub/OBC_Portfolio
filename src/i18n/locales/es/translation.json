@@ -1,0 +1,17 @@
+{
+	"greeting": "HOLA, SOY OSCAR BOLAÑOS CHACON",
+	"skills": "HABILIDADES PRINCIPALES",
+	"ws_message": "Hola, me gustaría contratarte",
+	"about_description": "Tengo 23 años y soy de Costa Rica. Amo a Dios, el fútbol, la tecnología y la programación. Soy un desarrollador full stack junior bilingüe con una perspectiva inusual: antes de escribir código, gestionaba equipos, resolvía fallos técnicos del mundo real y optimizaba procesos complejos en entornos industriales. Hoy en día, aplico esa misma lógica, enfoque y compromiso al mundo del software, creando soluciones claras, funcionales y duraderas. No solo aprendo rápido, sino que también pienso de manera diferente y me adapto a cualquier situación. Siempre estoy aprendiendo cosas nuevas y mejorando mis habilidades como desarrollador para poder aportar cada día una mejor versión de mí mismo a mi futuro trabajo.",
+	"nav": {
+		"home": "Inicio",
+		"about": "Sobre Mi",
+		"projects": "Proyectos",
+		"experience": "Experiencia"
+	},
+	"buttons": {
+		"check_projects": "MIRA MIS PROYECTOS",
+		"hire": "CONTRATAME",
+		"details": "DETALLES"
+	}
+}

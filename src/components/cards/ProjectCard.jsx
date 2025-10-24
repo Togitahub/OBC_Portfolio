@@ -1,7 +1,11 @@
+import { useTranslation } from "react-i18next";
 import Button from "../common/Button";
 
 const ProjectCard = ({ project, length }) => {
 	const Icon = project.icon;
+
+	const { t, i18n } = useTranslation();
+	const currentLang = i18n.language;
 
 	return (
 		<div className="flex justify-center">
@@ -10,12 +14,14 @@ const ProjectCard = ({ project, length }) => {
 					length < 4 ? "md:w-2xl" : ""
 				} flex flex-col gap-3 items-center justify-center shadow-md shadow-third/50 text-first bg-first/20 bg-cover bg-center rounded-2xl border-b-2 border-first transition-all duration-300 hover:scale-110 hover:border-third hover:text-third`}
 			>
-				<h2 className="font-semibold text-2xl">{project.name}</h2>
+				<h2 className="font-semibold text-2xl text-center">
+					{project.translations[currentLang].name}
+				</h2>
 				<Icon className="size-10" />
 				<Button
 					variation={"link"}
 					link={`/projects/${project.id}`}
-					text={"DETALLES"}
+					text={t("buttons.details")}
 				/>
 				<div className="flex flex-wrap justify-center items-center gap-4 mt-4 w-50">
 					{project.techs.map((Tech, idx) => (
