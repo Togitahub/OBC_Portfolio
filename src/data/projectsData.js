@@ -3,8 +3,9 @@ import admin_catalog from "/assets/images/catalog/admin.png";
 import hero_library from "/assets/images/library/hero_library.png";
 import hero_catalog_white from "/assets/images/catalog/hero_white.png";
 import admin_catalog_white from "/assets/images/catalog/admin_white.png";
+import hero_calculator from "/assets/images/calculator/hero_calculator.png";
 
-import { IoCarSportSharp, IoBook } from "react-icons/io5";
+import { IoCarSportSharp, IoBook, IoCalculator } from "react-icons/io5";
 import {
 	SiJavascript,
 	SiMongodb,
@@ -82,5 +83,24 @@ export const projectsData = [
 			SiSqlalchemy,
 			SiJsonwebtokens,
 		],
+	},
+	{
+		id: 3,
+		translations: {
+			en: {
+				name: "Import Calculator",
+				description:
+					"Robust web system providing an accurate and detailed estimation of total import costs (including tariffs, VAT, logistics, and customs fees). It allows users to simulate multiple international purchasing scenarios, which is vital for optimizing budgeting and financial decision-making. Showcases solid full-stack development skills and complex financial logic handling.",
+			},
+			"es-419": {
+				name: "Calculadora de Importación",
+				description:
+					"Sistema web robusto que ofrece una estimación precisa y detallada de costos totales de importación (incluye aranceles, IVA, costos logísticos y tasas aduaneras). Permite a los usuarios simular múltiples escenarios de compra internacional, lo que resulta vital para optimizar la presupuestación y la toma de decisiones financieras. Demuestra habilidades sólidas en desarrollo full-stack y manejo de lógica financiera compleja.",
+			},
+		},
+		link: "https://calculadora-de-importaciones.vercel.app/",
+		images: [hero_calculator],
+		icon: IoCalculator,
+		techs: [SiJavascript, SiReact, SiCss3, SiBootstrap],
 	},
 ];
