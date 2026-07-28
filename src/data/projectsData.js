@@ -1,8 +1,6 @@
 import hero_catalog from "/assets/images/catalog/hero.png";
 import admin_catalog from "/assets/images/catalog/admin.png";
 import hero_library from "/assets/images/library/hero_library.png";
-import hero_catalog_white from "/assets/images/catalog/hero_white.png";
-import admin_catalog_white from "/assets/images/catalog/admin_white.png";
 import hero_calculator from "/assets/images/calculator/hero_calculator.png";
 
 import { IoCarSportSharp, IoBook, IoCalculator } from "react-icons/io5";
@@ -38,12 +36,7 @@ export const projectsData = [
 			},
 		},
 		link: "https://importacionesmbv.com/",
-		images: [
-			hero_catalog,
-			admin_catalog,
-			hero_catalog_white,
-			admin_catalog_white,
-		],
+		images: [hero_catalog, admin_catalog],
 		icon: IoCarSportSharp,
 		techs: [
 			SiJavascript,
