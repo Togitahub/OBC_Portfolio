@@ -27,14 +27,14 @@ export const projectsData = [
 		id: 1,
 		translations: {
 			en: {
-				name: "Vehicles Sales Catalog",
+				name: "MBV Vehicle Sales CRM-DMS",
 				description:
-					"Full-stack vehicle inventory management system built with Node.js, Express, GraphQL (Apollo Server), MongoDB, and React. Features a public catalog with advanced search and filtering capabilities, alongside a comprehensive admin panel for CRUD operations on vehicles, brands, and models. Implements JWT authentication, Cloudinary integration for image management, and real-time inventory statistics. This scalable solution streamlines dealership operations while providing customers with an intuitive, responsive interface for browsing available vehicles.",
+					"Full-featured Dealer Management System (DMS) built for a vehicle import and sales business, using the MERN stack with GraphQL. It manages vehicle inventory, clients and their payments, general expenses/income, company balance, and exchange rates, all through an admin dashboard with accounting reports and a per-vehicle profit simulator. Includes role-based authentication, WhatsApp integration for client contact, and image uploads via Cloudinary.",
 			},
 			"es-419": {
-				name: "Catalogo de Venta de Vehículos",
+				name: "Venta de Vehículos MBV CRM-DMS",
 				description:
-					"Sistema full-stack de gestión de inventario de vehículos construido con Node.js, Express, GraphQL (Apollo Server), MongoDB y React. Incluye un catálogo público con funciones avanzadas de búsqueda y filtrado, junto con un panel de administración completo para operaciones CRUD sobre vehículos, marcas y modelos. Implementa autenticación JWT, integración con Cloudinary para la gestión de imágenes y estadísticas de inventario en tiempo real. Esta solución escalable optimiza las operaciones del concesionario y ofrece a los clientes una interfaz intuitiva y responsive para explorar los vehículos disponibles.",
+					"Sistema integral de gestión (DMS) para una empresa de importación y venta de vehículos, desarrollado con stack MERN + GraphQL. Permite administrar el inventario de autos, clientes y sus pagos, gastos e ingresos generales, balance de la empresa y tipos de cambio, todo desde un panel administrativo con reportes contables y un simulador de rentabilidad por vehículo. Incluye autenticación por roles, integración con WhatsApp para contacto con clientes y carga de imágenes vía Cloudinary.",
 			},
 		},
 		link: "https://importacionesmbv.com/",
@@ -98,7 +98,7 @@ export const projectsData = [
 					"Sistema web robusto que ofrece una estimación precisa y detallada de costos totales de importación (incluye aranceles, IVA, costos logísticos y tasas aduaneras). Permite a los usuarios simular múltiples escenarios de compra internacional, lo que resulta vital para optimizar la presupuestación y la toma de decisiones financieras. Demuestra habilidades sólidas en desarrollo full-stack y manejo de lógica financiera compleja.",
 			},
 		},
-		link: "https://calculadora-de-importaciones.vercel.app/",
+		link: "https://calculadora-mbv.vercel.app/",
 		images: [hero_calculator],
 		icon: IoCalculator,
 		techs: [SiJavascript, SiReact, SiCss3, SiBootstrap],

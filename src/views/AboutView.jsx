@@ -1,5 +1,5 @@
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
-import profile from "/assets/profile.jpg";
+import profile from "/assets/profile.png";
 import Button from "../components/common/Button";
 import { useTranslation } from "react-i18next";
 

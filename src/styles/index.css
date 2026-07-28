@@ -32,6 +32,14 @@
 	--color-fourth: #a8b2c8;
 }
 
+.testing-theme {
+	--color-main: #022891;
+	--color-first: #fff12c;
+	--color-second: #66f506;
+	--color-third: #f5f7fa;
+	--color-fourth: #a8b2c8;
+}
+
 .neon-font {
 	-webkit-text-stroke-width: 1px;
 	-webkit-text-stroke-color: var(--color-third);
